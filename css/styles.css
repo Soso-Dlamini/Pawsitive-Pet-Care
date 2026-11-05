@@ -1,0 +1,924 @@
+/* =============================================
+   PAWSITIVE PET ACADEMY
+   MAIN WEBSITE STYLESHEET
+   ============================================= */
+
+
+/* =============================================
+   1. GENERAL WEBSITE STYLES
+   ============================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f8fc;
+    color: #26364a;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.3;
+    margin-top: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+section {
+    width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+
+/* =============================================
+   2. WEBSITE HEADER
+   ============================================= */
+
+#main-header,
+.site-header {
+    width: 100%;
+    background-color: #102b4e;
+    color: white;
+}
+
+#main-header {
+    padding: 15px 5%;
+}
+
+.logo-area,
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 20px;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.academy-name h1,
+.header-text h1 {
+    margin: 0;
+    font-size: 28px;
+    color: white;
+}
+
+.academy-name p,
+.header-text p {
+    margin: 3px 0 0;
+    color: #c9d9eb;
+    font-size: 14px;
+}
+
+
+/* =============================================
+   3. MAIN NAVIGATION
+   ============================================= */
+
+.main-nav {
+    background-color: #1769aa;
+    border-top: 1px solid #34415d;
+    padding-top: 12px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-list,
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li a,
+.main-nav a {
+    display: block;
+    color: white;
+    padding: 14px 18px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.nav-list li a:hover,
+.nav-list li a[aria-current="page"],
+.main-nav a:hover,
+.main-nav a.active {
+    background-color: #0d4778;
+    color: white;
+}
+
+
+/* =============================================
+   4. PAGE BANNER
+   ============================================= */
+
+.page-banner {
+    background-color: #dceeff;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.page-banner-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.page-banner h2 {
+    color: #102b4e;
+    font-size: 34px;
+    margin: 0 0 10px;
+}
+
+.page-banner p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #40566e;
+    font-size: 17px;
+}
+
+.section-subtitle {
+    color: #1769aa;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* =============================================
+   5. GENERAL SECTIONS
+   ============================================= */
+
+.section-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 55px 25px;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 35px;
+}
+
+.section-heading h2 {
+    color: #102b4e;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.section-heading p {
+    max-width: 750px;
+    margin: 0 auto;
+    color: #617184;
+}
+
+
+/* =============================================
+   6. HOMEPAGE HERO SECTION
+   ============================================= */
+
+.hero,
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 70px 8%;
+    background-color: #dceeff;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h2 {
+    color: #102b4e;
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.hero-content p {
+    color: #475569;
+    margin-bottom: 25px;
+    max-width: 600px;
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+/* =============================================
+   7. ABOUT SECTION
+   ============================================= */
+
+.about-section {
+    padding: 65px 8%;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text,
+.about-image {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-text h2 {
+    color: #102b4e;
+    font-size: 30px;
+}
+
+.about-text p {
+    color: #555555;
+}
+
+.about-image img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* =============================================
+   8. COURSE CARDS
+   ============================================= */
+
+.courses-section,
+.course-section {
+    padding: 65px 8%;
+    background-color: #f4f8fc;
+}
+
+.course-container,
+.courses-container,
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    text-align: center;
+}
+
+.course-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(16, 43, 78, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(16, 43, 78, 0.15);
+}
+
+.course-card.selected {
+    border: 2px solid #1769aa;
+}
+
+.course-card img,
+.course-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.course-card-content,
+.course-content {
+    padding: 22px;
+}
+
+.course-card h3,
+.course-content h3 {
+    color: #102b4e;
+    font-size: 21px;
+}
+
+.course-card p,
+.course-content p {
+    color: #596b7d;
+}
+
+.course-content ul {
+    padding-left: 20px;
+    color: #46596d;
+}
+
+.course-content li {
+    margin-bottom: 7px;
+}
+
+.course-duration {
+    margin-top: 18px;
+    color: #102b4e !important;
+}
+
+.course-price {
+    color: #1769aa;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/* =============================================
+   9. BENEFIT CARDS
+   ============================================= */
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.benefit-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(16, 43, 78, 0.08);
+    text-align: center;
+}
+
+.benefit-card h3 {
+    color: #1769aa;
+}
+
+.benefit-card p {
+    color: #596b7d;
+}
+
+
+/* =============================================
+   10. GENERAL BUTTONS
+   ============================================= */
+
+.button {
+    display: inline-block;
+    background-color: #1769aa;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 22px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0d4778;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* =============================================
+   11. CALL TO ACTION
+   ============================================= */
+
+.cta-section {
+    background-color: #102b4e;
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.cta-section h2 {
+    font-size: 29px;
+}
+
+.cta-section p {
+    color: #d5e2f0;
+    margin-bottom: 25px;
+}
+
+.cta-section .button {
+    background-color: white;
+    color: #102b4e;
+}
+
+.cta-section .button:hover {
+    background-color: #dceeff;
+}
+
+
+/* =============================================
+   12. COURSE DETAILS
+   ============================================= */
+
+.course-details-section {
+    padding: 60px 8%;
+}
+
+.course-detail-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(16, 43, 78, 0.10);
+}
+
+.detail-image {
+    width: 45%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.course-detail-content {
+    flex: 1;
+}
+
+.course-detail-content h3 {
+    color: #102b4e;
+    font-size: 24px;
+}
+
+.course-detail-content p {
+    color: #596b7d;
+}
+
+.course-detail-card button,
+.course-toggle {
+    background-color: #1769aa;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+.course-detail-card button:hover,
+.course-toggle:hover {
+    background-color: #0d4778;
+}
+
+
+/* =============================================
+   13. FORMS
+   ============================================= */
+
+.contact-form,
+#fee-calculator {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(16, 43, 78, 0.10);
+}
+
+.contact-form h3 {
+    color: #102b4e;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #26364a;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd6e2;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 15px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #1769aa;
+    box-shadow: 0 0 4px rgba(23, 105, 170, 0.3);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.radio-option input {
+    width: auto;
+}
+
+.radio-option label {
+    margin: 0;
+    font-weight: normal;
+}
+
+.contact-form button {
+    margin-top: 10px;
+}
+
+#registration-message,
+#contact-message-status,
+#calculator-message {
+    margin-top: 15px;
+    color: #1769aa;
+    font-weight: bold;
+}
+
+
+/* =============================================
+   14. FEE CALCULATOR
+   ============================================= */
+
+.calculator-section,
+.fees-section {
+    padding: 60px 8%;
+}
+
+.course-option {
+    background-color: #f4f8fc;
+    border: 1px solid #d7e3ef;
+    border-radius: 7px;
+    padding: 15px;
+    margin: 12px 0;
+}
+
+.course-option label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.course-option input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.fee-summary,
+.fees-container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(16, 43, 78, 0.10);
+}
+
+.fee-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 14px 0;
+    border-bottom: 1px solid #e2eaf2;
+}
+
+.fee-row strong {
+    color: #102b4e;
+}
+
+.total-row {
+    border-bottom: none;
+    border-top: 2px solid #1769aa;
+    margin-top: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.total-row strong {
+    color: #1769aa;
+}
+
+.registration-info {
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(16, 43, 78, 0.10);
+}
+
+
+/* =============================================
+   15. MAPS
+   ============================================= */
+
+.map-section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+#map,
+#volunteer-map {
+    display: block;
+    width: 100%;
+    height: 430px;
+    min-height: 430px;
+    margin-top: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #d7e3ef;
+    background-color: #e2e8f0;
+    z-index: 1;
+}
+
+.map-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.map-controls button {
+    padding: 11px 20px;
+    background-color: #102b4e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.map-controls button:hover {
+    background-color: #1769aa;
+}
+
+#coordinates {
+    color: #334155;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+
+/* =============================================
+   16. WEBSITE FOOTER
+   ============================================= */
+
+.site-footer {
+    background-color: #102b4e;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.site-footer p {
+    margin: 5px 0;
+    color: #d5e2f0;
+    font-size: 14px;
+}
+
+
+/* =============================================
+   17. SIMPLE ANIMATIONS
+   ============================================= */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.page-banner-content,
+.hero-content,
+.section-heading {
+    animation: fadeIn 0.8s ease;
+}
+
+
+/* =============================================
+   18. TABLET RESPONSIVE DESIGN
+   ============================================= */
+
+@media screen and (max-width: 900px) {
+
+    .course-container,
+    .courses-container,
+    .course-grid,
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero,
+    .hero-section,
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image,
+    .about-image {
+        width: 100%;
+    }
+
+    .course-detail-card {
+        flex-direction: column;
+    }
+
+    .detail-image {
+        width: 100%;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =============================================
+   19. MOBILE RESPONSIVE DESIGN
+   ============================================= */
+
+@media screen and (max-width: 600px) {
+
+    #main-header {
+        padding: 15px 4%;
+    }
+
+    .logo-area,
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .academy-name h1,
+    .header-text h1 {
+        font-size: 23px;
+    }
+
+    .nav-list,
+    .main-nav ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav-list li,
+    .main-nav li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-list li a,
+    .main-nav a {
+        padding: 12px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .page-banner {
+        padding: 40px 15px;
+    }
+
+    .page-banner h2 {
+        font-size: 27px;
+    }
+
+    .hero,
+    .hero-section,
+    .about-section,
+    .courses-section,
+    .course-section,
+    .course-details-section,
+    .fees-section,
+    .calculator-section,
+    .contact-section,
+    .map-section {
+        padding: 40px 18px;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .section-container {
+        padding: 40px 18px;
+    }
+
+    .section-heading h2 {
+        font-size: 24px;
+    }
+
+    .course-container,
+    .courses-container,
+    .course-grid,
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .course-detail-card {
+        flex-direction: column;
+    }
+
+    .detail-image {
+        width: 100%;
+        height: 230px;
+    }
+
+    .contact-form,
+    .fee-summary,
+    #fee-calculator,
+    .registration-info {
+        padding: 20px;
+    }
+
+    .fee-row {
+        font-size: 14px;
+    }
+
+    .total-row {
+        font-size: 17px;
+    }
+
+    #map,
+    #volunteer-map {
+        height: 300px;
+        min-height: 300px;
+    }
+
+    .map-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .map-controls button {
+        width: 100%;
+    }
+
+    .site-footer {
+        padding: 35px 15px;
+    }
+}

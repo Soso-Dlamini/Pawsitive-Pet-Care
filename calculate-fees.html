@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculate Fees | Pawsitive Pet Academy</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header class="site-header">
+
+        <div class="header-content">
+            <img src="images/Paws Logo.png"
+                 alt="Pawsitive Pet Academy Logo"
+                 class="logo">
+
+            <div class="header-text">
+                <h1>Pawsitive Pet Academy</h1>
+                <p>Professional Pet Care Training</p>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="six-month-courses.html">Six-Month Courses</a></li>
+                <li><a href="six-week-courses.html">Six-Week Courses</a></li>
+                <li><a href="course-details.html">Course Details</a></li>
+                <li><a href="calculate-fees.html" class="active">Calculate Fees</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Page Introduction -->
+        <section class="page-banner">
+            <h2>Calculate Your Course Fees</h2>
+            <p>
+                Select the courses you are interested in and
+                calculate your total fees, discounts and VAT.
+            </p>
+        </section>
+
+        <!-- Fee Calculator -->
+        <section class="section-container">
+
+            <div class="section-heading">
+                <h2>Select Your Courses</h2>
+
+                <p>
+                    You can select more than one course.
+                    Your discount will automatically depend
+                    on the number of courses selected.
+                </p>
+            </div>
+
+            <form id="fee-calculator" class="contact-form">
+
+                <h3>Six-Month Courses</h3>
+
+                <div class="course-option">
+                    <label>
+                        <input type="checkbox"
+                               name="course"
+                               value="1500"
+                               data-course-name="Pet Care Essentials"
+                               data-duration="Six-Month">
+
+                        Pet Care Essentials — R1,500
+                    </label>
+                </div>
+
+                <div class="course-option">
+                    <label>
+                        <input type="checkbox"
+                               name="course"
+                               value="1500"
+                               data-course-name="Animal Behaviour"
+                               data-duration="Six-Month">
+
+                        Animal Behaviour — R1,500
+                    </label>
+                </div>
+
+                <div class="course-option">
+                    <label>
+                        <input type="checkbox"
+                               name="course"
+                               value="1500"
+                               data-course-name="Pet Grooming"
+                               data-duration="Six-Month">
+
+                        Pet Grooming — R1,500
+                    </label>
+                </div>
+                <div class="course-option">
+                    <label>
+                        <input type="checkbox"
+                               name="course"
+                               value="1500"
+                               data-course-name="Pet Nutrition"
+                               data-duration="Six-Month">
+
+                        Canine Obedience — R1,500
+                    </label>
+
+                <hr>
+
+                <h3>Six-Week Courses</h3>
+
+                <div class="course-option">
+                    <label>
+                        <input type="checkbox"
+                               name="course"
+                               value="750"
+                               data-course-name="Pet First Aid"
+                               data-duration="Six-Week">
+
+                        Pet First Aid — R750
+                    </label>
+                </div>
+
+                <div class="course-option">
+                    <label>
+                        <input type="checkbox"
+                               name="course"
+                               value="750"
+                               data-course-name="Puppy Foundations"
+                               data-duration="Six-Week">
+
+                        Puppy Foundations — R750
+                    </label>
+                </div>
+
+                <div class="course-option">
+                    <label>
+                        <input type="checkbox"
+                               name="course"
+                               value="750"
+                               data-course-name="Everyday Grooming"
+                               data-duration="Six-Week">
+
+                        Everyday Grooming — R750
+                    </label>
+                </div>
+
+                <p id="calculator-message">
+                    Select at least one course to calculate your fees.
+                </p>
+
+            </form>
+
+        </section>
+
+        <!-- Fee Summary -->
+        <section class="section-container">
+
+            <div class="section-heading">
+                <h2>Your Fee Summary</h2>
+                <p>
+                    Your fees will update automatically when
+                    you select or deselect a course.
+                </p>
+            </div>
+
+            <div class="fee-summary">
+
+                <div class="fee-row">
+                    <span>Number of courses:</span>
+                    <strong id="course-count">0</strong>
+                </div>
+
+                <div class="fee-row">
+                    <span>Subtotal:</span>
+                    <strong id="subtotal">R0.00</strong>
+                </div>
+
+                <div class="fee-row">
+                    <span>Discount rate:</span>
+                    <strong id="discount-rate">0%</strong>
+                </div>
+
+                <div class="fee-row">
+                    <span>Discount amount:</span>
+                    <strong id="discount-amount">R0.00</strong>
+                </div>
+
+                <div class="fee-row">
+                    <span>Amount after discount:</span>
+                    <strong id="after-discount">R0.00</strong>
+                </div>
+
+                <div class="fee-row">
+                    <span>VAT (15%):</span>
+                    <strong id="vat-amount">R0.00</strong>
+                </div>
+
+                <div class="fee-row total-row">
+                    <span>Total amount:</span>
+                    <strong id="total">R0.00</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Registration Details -->
+        <section class="section-container">
+
+            <div class="section-heading">
+                <h2>Continue with Registration</h2>
+
+                <p>
+                    After selecting your courses, you can continue
+                    by providing your contact information.
+                </p>
+            </div>
+
+            <div class="registration-info">
+
+                <p>
+                    Your selected courses and calculated fees will
+                    be included in your registration enquiry.
+                </p>
+
+                <a href="course-details.html" class="button">
+                    Continue to Registration
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Discount Information -->
+        <section class="section-container">
+
+            <div class="section-heading">
+                <h2>Our Discount Structure</h2>
+                <p>
+                    Students receive a discount based on the
+                    number of courses selected.
+                </p>
+            </div>
+
+            <div class="benefits-grid">
+
+                <div class="benefit-card">
+                    <h3>1 Course</h3>
+                    <p>0% Discount</p>
+                </div>
+
+                <div class="benefit-card">
+                    <h3>2 Courses</h3>
+                    <p>5% Discount</p>
+                </div>
+
+                <div class="benefit-card">
+                    <h3>3 Courses</h3>
+                    <p>10% Discount</p>
+                </div>
+
+                <div class="benefit-card">
+                    <h3>More Than 3 Courses</h3>
+                    <p>15% Discount</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> Pawsitive Pet Academy.</p>
+        <p>Professional Pet Care Training</p>
+    </footer>
+
+    <script src="Javascript/script.js"></script>
+
+</body>
+</html>

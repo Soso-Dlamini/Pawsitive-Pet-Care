@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Course Details | Pawsitive Pet Academy</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Leaflet Map CSS -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header class="site-header">
+
+        <div class="header-content">
+            <img src="images/Paws Logo.png"
+                 alt="Pawsitive Pet Academy Logo"
+                 class="logo">
+
+            <div class="header-text">
+                <h1>Pawsitive Pet Academy</h1>
+                <p>Professional Pet Care Training</p>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="six-month-courses.html">Six-Month Courses</a></li>
+                <li><a href="six-week-courses.html">Six-Week Courses</a></li>
+                <li><a href="course-details.html" class="active">Course Details</a></li>
+                <li><a href="calculate-fees.html">Calculate Fees</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Page Introduction -->
+        <section class="page-banner">
+            <h2>Course Details</h2>
+            <p>
+                Find out more about our training programme,
+                what you will learn and how to register.
+            </p>
+        </section>
+
+        <!-- Course Overview -->
+        <section class="section-container">
+
+            <div class="section-heading">
+                <h2>Pet Care Essentials</h2>
+                <p>
+                    A six-month course designed to introduce students
+                    to responsible pet care and animal wellbeing.
+                </p>
+            </div>
+
+            <div class="course-detail-card">
+
+                <img src="images/love.jpg"
+                     alt="A person caring for a dog"
+                     class="detail-image">
+
+                <div class="course-detail-content">
+
+                    <h3>About This Course</h3>
+
+                    <p>
+                        Pet Care Essentials helps students understand
+                        the everyday needs of pets. Students learn
+                        about nutrition, hygiene, health, safety and
+                        responsible animal care.
+                    </p>
+
+                    <p><strong>Course duration:</strong> 6 Months</p>
+                    <p><strong>Course type:</strong> Professional Training</p>
+                    <p><strong>Learning approach:</strong> Theory and practical activities</p>
+
+                    <a href="calculate-fees.html" class="button">
+                        Calculate Course Fees
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Course Modules -->
+        <section class="section-container">
+
+            <div class="section-heading">
+                <h2>What You Will Learn</h2>
+                <p>
+                    The course is divided into three learning stages
+                    to help students build their knowledge gradually.
+                </p>
+            </div>
+
+            <div class="benefits-grid">
+
+                <div class="benefit-card">
+                    <h3>Months 1–2: Introduction to Pet Care</h3>
+
+                    <ul>
+                        <li>Understanding different pets</li>
+                        <li>Basic animal needs</li>
+                        <li>Responsible pet ownership</li>
+                        <li>Daily care routines</li>
+                    </ul>
+                </div>
+
+                <div class="benefit-card">
+                    <h3>Months 3–4: Health and Wellbeing</h3>
+
+                    <ul>
+                        <li>Pet nutrition and feeding</li>
+                        <li>Animal hygiene</li>
+                        <li>Recognising health concerns</li>
+                        <li>Pet safety and prevention</li>
+                    </ul>
+                </div>
+
+                <div class="benefit-card">
+                    <h3>Months 5–6: Practical Pet Care</h3>
+
+                    <ul>
+                        <li>Practical care activities</li>
+                        <li>Handling animals safely</li>
+                        <li>Applying pet care knowledge</li>
+                        <li>Course review and assessment</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Registration Form -->
+        <section class="section-container">
+
+            <div class="section-heading">
+                <h2>Register Your Interest</h2>
+                <p>
+                    Complete the form below to register your interest
+                    in joining Pawsitive Pet Academy.
+                </p>
+            </div>
+
+            <form id="registration-form" class="contact-form">
+
+                <div class="form-group">
+                    <label for="student-name">Full Name</label>
+                    <input type="text"
+                           id="student-name"
+                           name="student-name"
+                           placeholder="Enter your full name"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="student-email">Email Address</label>
+                    <input type="email"
+                           id="student-email"
+                           name="student-email"
+                           placeholder="Enter your email address"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="student-phone">Phone Number</label>
+                    <input type="tel"
+                           id="student-phone"
+                           name="student-phone"
+                           placeholder="Enter your phone number"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="student-course">Course of Interest</label>
+
+                    <select id="student-course"
+                            name="student-course"
+                            required>
+
+                        <option value="">Select a course</option>
+                        <option value="Pet Care Essentials">Pet Care Essentials</option>
+                        <option value="Animal Behaviour">Animal Behaviour</option>
+                        <option value="Pet Grooming">Pet Grooming</option>
+                        <option value="Pet First Aid">Pet First Aid</option>
+                        <option value="Puppy Foundations">Puppy Foundations</option>
+                        <option value="Everyday Grooming">Everyday Grooming</option>
+
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Preferred Volunteer Location</label>
+
+                    <div class="radio-option">
+                        <input type="radio"
+                               id="durban-location"
+                               name="volunteer-location"
+                               value="Durban Dog School"
+                               required>
+
+                        <label for="durban-location">Durban Dog School</label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input type="radio"
+                               id="natal-location"
+                               name="volunteer-location"
+                               value="Natal German Shepherd Dog Club">
+
+                        <label for="natal-location">
+                            Natal German Shepherd Dog Club
+                        </label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input type="radio"
+                               id="swift-location"
+                               name="volunteer-location"
+                               value="SWIFT K9 Services">
+
+                        <label for="swift-location">SWIFT K9 Services</label>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="student-message">Additional Information</label>
+
+                    <textarea id="student-message"
+                              name="student-message"
+                              rows="5"
+                              placeholder="Write any questions or additional information here"></textarea>
+                </div>
+
+                <button type="submit" class="button">
+                    Submit Registration Interest
+                </button>
+
+                <p id="registration-message"></p>
+
+            </form>
+
+        </section>
+
+        <!-- Volunteer Locations -->
+        <section class="section-container">
+
+            <div class="section-heading">
+                <h2>Volunteer Locations</h2>
+
+                <p>
+                    Explore the listed locations where students
+                    may have opportunities to gain practical
+                    experience.
+                </p>
+            </div>
+
+            <div class="benefits-grid">
+
+                <div class="benefit-card">
+                    <h3>Durban Dog School</h3>
+                    <p>Volunteer location option for students.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <h3>Natal German Shepherd Dog Club</h3>
+                    <p>Volunteer location option for students.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <h3>SWIFT K9 Services</h3>
+                    <p>Volunteer location option for students.</p>
+                </div>
+
+            </div>
+
+            <div id="volunteer-map"></div>
+
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+
+            <h2>Plan Your Course Fees</h2>
+
+            <p>
+                Select your courses and calculate your fees,
+                including the available discount and VAT.
+            </p>
+
+            <a href="calculate-fees.html" class="button">
+                Go to Fee Calculator
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> Pawsitive Pet Academy.</p>
+        <p>Professional Pet Care Training</p>
+    </footer>
+
+    <!-- Leaflet Map JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Website JavaScript -->
+    <script src="Javascript/script.js"></script>
+
+</body>
+</html>

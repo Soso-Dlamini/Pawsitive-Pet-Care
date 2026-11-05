@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Pawsitive Pet Academy</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Leaflet Map CSS -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header class="site-header">
+
+        <div class="header-content">
+
+            <img src="images/Paws Logo.png"
+                 alt="Pawsitive Pet Academy Logo"
+                 class="logo">
+
+            <div class="header-text">
+                <h1>Pawsitive Pet Academy</h1>
+                <p>Professional Pet Care Training</p>
+            </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="six-month-courses.html">Six-Month Courses</a></li>
+                <li><a href="six-week-courses.html">Six-Week Courses</a></li>
+                <li><a href="course-details.html">Course Details</a></li>
+                <li><a href="calculate-fees.html">Calculate Fees</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Page Introduction -->
+        <section class="page-banner">
+
+            <h2>Contact Us</h2>
+
+            <p>
+                We are here to help you begin your journey
+                towards professional pet care training.
+            </p>
+
+        </section>
+
+        <!-- Contact Introduction -->
+        <section class="section-container">
+
+            <div class="section-heading">
+
+                <h2>Get in Touch With Us</h2>
+
+                <p>
+                    Do you have questions about our courses,
+                    registration or training programmes?
+                    Send us an enquiry and we will be happy
+                    to assist you.
+                </p>
+
+            </div>
+
+            <!-- Contact Information -->
+            <div class="benefits-grid">
+
+                <div class="benefit-card">
+
+                    <h3>Course Information</h3>
+
+                    <p>
+                        Contact us if you need more information
+                        about our six-month and six-week courses.
+                    </p>
+
+                </div>
+
+                <div class="benefit-card">
+
+                    <h3>Registration Support</h3>
+
+                    <p>
+                        We can help guide you through the
+                        registration process and course selection.
+                    </p>
+
+                </div>
+
+                <div class="benefit-card">
+
+                    <h3>Student Guidance</h3>
+
+                    <p>
+                        Get assistance with choosing a course
+                        that matches your learning interests.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Enquiry Form -->
+        <section class="section-container">
+
+            <div class="section-heading">
+
+                <h2>Send Us an Enquiry</h2>
+
+                <p>
+                    Complete the form below and tell us
+                    how we can assist you.
+                </p>
+
+            </div>
+
+            <form id="contact-form" class="contact-form">
+
+                <div class="form-group">
+
+                    <label for="contact-name">Full Name</label>
+
+                    <input type="text"
+                           id="contact-name"
+                           name="contact-name"
+                           placeholder="Enter your full name"
+                           required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="contact-email">Email Address</label>
+
+                    <input type="email"
+                           id="contact-email"
+                           name="contact-email"
+                           placeholder="Enter your email address"
+                           required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="contact-phone">Phone Number</label>
+
+                    <input type="tel"
+                           id="contact-phone"
+                           name="contact-phone"
+                           placeholder="Enter your phone number">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="contact-subject">Subject</label>
+
+                    <select id="contact-subject"
+                            name="contact-subject"
+                            required>
+
+                        <option value="">Select an enquiry subject</option>
+                        <option value="Six-Month Courses">Six-Month Courses</option>
+                        <option value="Six-Week Courses">Six-Week Courses</option>
+                        <option value="Registration">Registration</option>
+                        <option value="Course Fees">Course Fees</option>
+                        <option value="Volunteer Opportunities">Volunteer Opportunities</option>
+                        <option value="Other">Other</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="contact-message">Your Message</label>
+
+                    <textarea id="contact-message"
+                              name="contact-message"
+                              rows="6"
+                              placeholder="Write your enquiry here..."
+                              required></textarea>
+
+                </div>
+
+                <button type="submit" class="button">
+                    Send Enquiry
+                </button>
+
+                <p id="contact-message-status"></p>
+
+            </form>
+
+        </section>
+
+        <!-- Location Information -->
+        <section class="section-container">
+
+            <div class="section-heading">
+
+                <h2>Find Our Volunteer Locations</h2>
+
+                <p>
+                    Explore the volunteer locations listed
+                    in our course information.
+                </p>
+
+            </div>
+
+            <div class="benefits-grid">
+
+                <div class="benefit-card">
+                    <h3>Durban Dog School</h3>
+                    <p>Volunteer location option.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <h3>Natal German Shepherd Dog Club</h3>
+                    <p>Volunteer location option.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <h3>SWIFT K9 Services</h3>
+                    <p>Volunteer location option.</p>
+                </div>
+
+            </div>
+
+            <div id="map"></div>
+
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+
+            <h2>Start Your Pet Care Journey</h2>
+
+            <p>
+                Explore our courses and discover the skills
+                you can develop at Pawsitive Pet Academy.
+            </p>
+
+            <a href="six-month-courses.html" class="button">
+                Explore Our Courses
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <p>
+            &copy; <span id="current-year"></span>
+            Pawsitive Pet Academy.
+        </p>
+
+        <p>Professional Pet Care Training</p>
+
+    </footer>
+
+    <!-- Leaflet Map JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Website JavaScript -->
+    <script src="Javascript/script.js"></script>
+
+</body>
+</html>
